@@ -19,14 +19,12 @@ public class TarefaService {
 
     public TarefaDTO  converterTarefaParaTarefaDTO(Tarefa tarefa){
         TarefaDTO tarefaDTO = new TarefaDTO(tarefa.getId(),
-                tarefa.getNome(),
                 tarefa.getDescricao(),
                 tarefa.isConcluido());
         return tarefaDTO;
     }
     public Tarefa converterTarefaDTOParaTarefa(TarefaDTO tarefaDTO){
         Tarefa tarefa = new Tarefa(tarefaDTO.getId(),
-                tarefaDTO.getNome(),
                 tarefaDTO.getDescricao(),
                 tarefaDTO.isConcluido());
         return tarefa;
